@@ -1,0 +1,183 @@
+/* Basic Style */
+
+.app {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+.header {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.header__img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.header .header__link {
+  font-family: fantasy, cursive;
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    text-align: center;
+  }
+}
+
+.app__container {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.todo__item {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1
+}
+
+.todo__wrapper {
+  display: flex;
+}
+
+/*reset default styles*/
+
+ul {
+  margin: -3px 0 0 0;
+  padding: 0;
+}
+
+li {
+  list-style:none;
+}
+
+input,
+button{
+  outline:none;
+}
+
+.button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #3a3A3a;
+}
+
+/* Heading */
+
+.todo__title {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.todo__item-input {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dDd;
+  background: #FFF;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+.todo__item-input:focus {
+  color: #333;
+}
+
+/* New Task */
+
+.todo__title-new {
+  display: block;
+  margin: 15px 0 20px;
+}
+
+.todo__item-new {
+  width: 318px;
+}
+
+/* Task list */
+
+.todo__inner {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo__inner > * {
+  vertical-align: middle;
+}
+
+.todo__inner > .todo__checkbox {
+  margin: 0 10px;
+}
+
+.todo__inner > .todo__item-label {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+
+.todo__inner > .todo__item-input {
+  width: 226px;
+}
+
+.button__img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.button__img:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+
+.todo__completed .todo__item-label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+
+.todo__inner .todo__item-input {
+  display: none;
+}
+
+.todo__edit-mode .todo__item-input {
+  display: inline-block;
+  width: 224px;
+}
+
+.todo__edit-mode .todo__item-label {
+  display: none;
+}
+
+.todo__add {
+  margin-bottom: 14px;
+}
